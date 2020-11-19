@@ -1,0 +1,20 @@
+language: minimal
+env:
+  global:
+    # - secure: "fPRKgxcbSXyiLqkUjAjPkn5eGBqMqf6c5haTZ9x76sDl1792nDyiL2FXSpiv2s8PeOqMbWgcXly0r+CLXypYkWba9nIxb4bhvtXyDoYAaoBV0lG1NbBakuOwqW/u60WpPJS1qTqmEUSEbSxdntqk7HF1yG6MdMi3PdubxMyw9h0="
+    - DEBUG_MODE=true
+# install:
+#   - travis_retry make bootstrap
+#   - echo "Host github.com" >> ~/.ssh/config
+#   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
+#   - git config --global user.email "mockup@garbas.si"
+#   - git config --global user.name "Travis CI"
+# script:
+#   - make test-once
+#   - make bundles
+#  - if [ "$TRAVIS_BRANCH" == "master" ]; then make test-ci; fi
+# after_success:
+#   - 
+branches:
+ only:
+   - main
